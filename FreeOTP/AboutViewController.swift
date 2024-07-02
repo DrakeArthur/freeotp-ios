@@ -55,21 +55,20 @@ class AboutViewController : UIViewController, UITextViewDelegate {
         aboutTextView.delegate = self
         aboutTextView.text = """
         2013-2020 - Red Hat, Inc., et al.
+        Compiled and distributed on the Mac App Store by Drake Allegrini 2024
 
         FreeOTP is licensed under Apache 2.0
 
-        For more information, see our website
+        For more information, the source code.
 
         We welcome your feedback
         - Report a Problem
-        - Ask for Help
         """
 
         aboutTextView.addHyperLinksToText(originalText: aboutTextView.text,
                                           hyperLinks:
             ["Apache 2.0": "https://www.apache.org/licenses/LICENSE-2.0.html",
-             "website": "https://freeotp.github.io",
-             "Report a Problem": "https://github.com/freeotp/freeotp-ios/issues",
-             "Ask for Help": "https://lists.fedorahosted.org/mailman/listinfo/freeotp-devel"])
+             "source code": "https://github.com/DrakeArthur/freeotp-ios",
+             "Report a Problem": "https://github.com/DrakeArthur/freeotp-ios/issues"])
     }
 }
